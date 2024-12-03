@@ -16,7 +16,11 @@ export default function DownNavBar() {
     // };
     useEffect(() => {
         const handleResize = () => {
-            window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false);
+            if (window.innerWidth <= 540) {
+                setShouldShowDownNavBar(true)
+                return;
+            }
+            setShouldShowDownNavBar(false);
         };
 
         handleResize(); // Set initial state based on window size
