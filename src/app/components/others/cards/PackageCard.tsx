@@ -6,7 +6,7 @@ export default function PackageCard(props: { data: { id: number | string; image:
     const { id, image, title, location, price, duration } = props.data;
 
     return (
-        <div className="tour-card">
+        <div className="tour-card" key={id}>
             <img src={image} alt={title} className="tour-image" />
             <div className="tour-info">
                 <h3 className="tour-title">{title}</h3>
