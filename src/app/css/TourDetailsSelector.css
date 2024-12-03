@@ -1,0 +1,187 @@
+.TourDetailsSelector_main {
+    width: 100%;
+    padding: 1.5em;
+    background-color: var(--secondary-color);
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    max-width: var(--max-layout-width);
+    height: max-content;
+    /* transform: translateY(6em); */
+    
+}
+
+.TourDetailsSelector_nav {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.TourDetailsSelector_nav a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.TourDetailsSelector_nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.TourDetailsSelector_nav a:hover {
+    color: var(--primary-color);
+}
+
+.TourDetailsSelector_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.TourDetailsSelector_tripType {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    font-size: 1rem;
+
+    &>label>input {
+        color: var(--primary-text-color);
+        font-weight: 400;
+    }
+}
+
+.TourDetailsSelector_tripType label {
+    cursor: pointer;
+}
+
+.TourDetailsSelector_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.TourDetailsSelector_input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+    padding: 0.8em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+    &>h4 {
+        font-size: small;
+        font-weight: 400;
+        color: #363636;
+    }
+
+    &>strong {
+        font-size: 1.7em;
+        text-transform: uppercase;
+    }
+
+    &>span {
+        font-size: small;
+    }
+}
+
+.TourDetailsSelector_input:hover {
+    background-color: #f5f5f5;
+}
+
+.TourDetailsSelector_swapIcon {
+    font-size: 1.5rem;
+    scale: 2;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0.5em;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+}
+
+.TourDetailsSelector_addReturn {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.TourDetailsSelector_specialFares {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.TourDetailsSelector_specialFares button {
+    border: 1px solid var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.TourDetailsSelector_specialFares button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.TourDetailsSelector_searchButton {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.TourDetailsSelector_searchButton button {
+    padding: 0.8em 2.5em;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.TourDetailsSelector_searchButton button:hover {
+    background-color: #ff8c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .TourDetailsSelector_inputs {
+        justify-content: center;
+    }
+
+    .TourDetailsSelector_input {
+        flex: none;
+        width: 100%;
+    }
+
+    .TourDetailsSelector_main {
+        /* transform: translateY(38em); */
+    }
+}
+
+@media (max-width: 540px) {
+
+    .TourDetailsSelector_nav {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .TourDetailsSelector_specialFares {
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+}
