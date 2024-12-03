@@ -15,12 +15,18 @@ export default function DownNavBar() {
         window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false)
     };
     useEffect(() => {
+        const handleResize = () => {
+            window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false);
+        };
+
+        handleResize(); // Set initial state based on window size
         document.body.style.paddingBottom = '2em'; // this is important to prevent the content from being hidden behind the navbar
         window.addEventListener('resize', handleResize);
+
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    })
+    }, []);
     return (
         <>
             {
