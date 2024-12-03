@@ -11,9 +11,9 @@ import "../css/animation.css"
 export default function DownNavBar() {
     const [shouldShowDownNavBar, setShouldShowDownNavBar] = useState(window.innerWidth <= 540)
     const [clickedBtnInfo, setClickedBtnInfo] = useState({ btnName: 'home' });
-    const handleResize = () => {
-        window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false)
-    };
+    // const handleResize = () => {
+    //     window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false)
+    // };
     useEffect(() => {
         const handleResize = () => {
             window.innerWidth <= 540 ? setShouldShowDownNavBar(true) : setShouldShowDownNavBar(false);
