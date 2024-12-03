@@ -10,7 +10,7 @@ import DownNavBar from '../DownNavBar';
 export default function CommonComponents() {
     return (
         <>
-            {/* <CursorFollowTrail /> */}
+            <CursorFollowTrail />
             <DownNavBar />
             <HamburgerMenu />
         </>
