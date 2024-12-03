@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import "../../../css/TourCardCarousel.css";
+import "./styles/TourCardCarousel.css";
 export default function PackageCard(props: { data: { id: number | string; image: string; title: string; location: string; price: string; duration: string; }; }) {
     // write all the key where
     const { id, image, title, location, price, duration } = props.data;
