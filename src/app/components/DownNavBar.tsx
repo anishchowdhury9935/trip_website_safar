@@ -11,10 +11,11 @@ import offer_icon_fill from "../../../public/media/images/offer_icon_fill.avif"
 import "../css/animation.css"
 
 export default function DownNavBar() {
-    const [shouldShowDownNavBar, setShouldShowDownNavBar] = useState(window.innerWidth <= 540)
+    const [shouldShowDownNavBar, setShouldShowDownNavBar] = useState<boolean | undefined>()
     const [clickedBtnInfo, setClickedBtnInfo] = useState({ btnName: 'home' });
 
     useEffect(() => {
+        setShouldShowDownNavBar(window.innerWidth <= 540);
         const handleResize = () => {
             if (window.innerWidth <= 540) {
                 setShouldShowDownNavBar(true)
