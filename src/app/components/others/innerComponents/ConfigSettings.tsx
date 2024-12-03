@@ -2,7 +2,7 @@ import React from 'react'
 import './styles/ConfigSettings.css';
 import ConfigSettingsCard from '../cards/ConfigSettingsCard';
 export default function ConfigSettings() {
-    let SettingsArr = [
+    const SettingsArr = [
         {
             title: "Packages",
             icon: "https://img.icons8.com/ios-filled/50/travel-letter.png",
