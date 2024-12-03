@@ -49,7 +49,7 @@
 
 .DownNavBar_icon_img {
     /* background-color: red; */
-    width: 100%;
-    max-width: 27px;
+    width: 100% !important;
+    max-width: 27px !important;
     /* filter: invert(); */
 }

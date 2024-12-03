@@ -1,9 +1,8 @@
 "use client";
-// import Image from 'next/image';
+// "use client";
 import React from 'react';
 import Link from 'next/link';
 import './styles/Navbar.css';
-
 import { setHamburgerMenuVisibility } from '@/app/redux/states/globalState'
 import { RootState } from '@/app/redux/store';
 import { useDispatch, useSelector } from 'react-redux';
