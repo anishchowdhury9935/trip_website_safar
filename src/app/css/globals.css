@@ -65,7 +65,7 @@ button:hover {
 
 .home-page-main-heroSection {
     /* border: 1px solid red; */
-    margin-top: 8em !important;
+    /* margin-top: 8em !important; */
     height: 30em;
     display: flex;
     align-items: flex-end;
@@ -148,10 +148,5 @@ button:hover {
 
     .home-page-main-hero-slider-img-container {
         background-size: cover;
-    }
-
-    .home-page-main-heroSection {
-        /* border: 1px solid red; */
-        margin-top: 35em !important;
     }
 }

@@ -1,7 +1,0 @@
-.home-page-main-container {
-    /* border: 1px solid green; */
-    height: max-content;
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-}
