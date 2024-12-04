@@ -1,12 +1,11 @@
 "use client";
 import "../app/css/globals.css";
-// import styles from "./page.module.css"
+import Home from "./components/home/page";
 
 export default function root() {
-  location.pathname = "/components/home";
   return (
     <div>
-        
+      <Home />
     </div>
   );
 }
