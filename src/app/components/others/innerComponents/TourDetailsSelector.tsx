@@ -58,14 +58,14 @@ export default function TourDetailsSelector() {
 
                 {/* Special Fares */}
                 <div className="TourDetailsSelector_specialFares">
-                    <button>Armed Forces</button>
-                    <button>Student</button>
-                    <button>Senior Citizen</button>
+                    <button type="button">Armed Forces</button>
+                    <button type="button">Student</button>
+                    <button type="button">Senior Citizen</button>
                 </div>
 
                 {/* Search Button */}
                 <div className="TourDetailsSelector_searchButton">
-                    <button>Search Flights</button>
+                    <button type="button" className="button-86">Search Flights</button>
                 </div>
             </div>
         </div>

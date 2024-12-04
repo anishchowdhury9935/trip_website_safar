@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../app/css/globals.css";
+import "../app/css/common.css";
 import Navbar from "./components/Navbar";
 import ClientProvider from "./redux/ClientProvider";
 import CommonComponents from "./components/others/CommonComponents";
