@@ -7,7 +7,7 @@ export default function AboutForHome() {
             <h2>About Us</h2>
             <p>
                 Welcome to our travel agency! We are dedicated to providing you with the best travel experiences around the world. 
-                Our team of experts is here to help you plan your perfect vacation, whether it's a relaxing beach getaway, an adventurous 
+                Our team of experts is here to help you plan your perfect vacation, whether it&apos;s a relaxing beach getaway, an adventurous 
                 mountain trek, or a cultural city tour. Join us and explore the world with us!
             </p>
             <div className='AboutForHome_highlights'>
